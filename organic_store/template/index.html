@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ogani Template">
+    <meta name="keywords" content="Ogani, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ogani | Template</title>
+
+    <!-- Google Font -->
+    {% load static %}
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'assets/css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'assets/css/jquery-ui.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'assets/css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" type="text/css">
+<!--     <script>-->
+<!--        function showAlert() {-->
+<!--            alert('login first');-->
+<!--        }-->
+<!--    </script>-->
+    <!--    message-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+
+<body>
+<section style="background-image:url(static/assets/img/hero-bg.jpg);">
+<div>
+                        <a href="./index.html"><img src="{% static 'assets/img/logo.png' %}" alt=""></a>
+</div>
+     <div class="header__top__left" align="center">
+
+
+                </div>
+    <div align="center">
+                        <div class="hero__text">
+                            <span>FRUIT FRESH</span>
+                            <h2 style="color:green;">Vegetable <br />100% Organic</h2>
+                            <p style="color:green;" >Free Pickup and Delivery Available</p>
+                                   <div class="header__menu">
+                        <ul style=" margin-right: 34px;">
+                            <li><a href=""><button class="site-btn" style="width: 148px; height: 45px;">Register</button></a>
+                                <ul class="header__menu__dropdown">
+                                    <li><a href="regguser">User Register </a></li>
+                                    <li><a href="reggshop">Shop Register</a></li>
+                                </ul>
+                        </ul>
+<div>
+                 <ul style=" margin-right: 34px;">
+                            <li><a href=""><button class="site-btn" style="width: 148px; height: 45px;">Login</button></a>
+                                <ul class="header__menu__dropdown">
+                                    <li><a href="login">User Login</a></li>
+                                    <li><a href="shoplogin">Shop Login</a></li>
+                                </ul>
+                        </ul></div>
+                                       <br>
+<!--                            <a href="message" class="primary-btn">SHOP NOW</a>-->
+</div>
+<!--                            <button onclick="showAlert()" class="site-btn">Shop now</button>-->
+                        </div>
+        <br>
+        <br>
+</section>
+    <section class="featured spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+
+                        <h2>Organic Product</h2>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row featured__filter">
+
+{% for i in data %}
+                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+
+                    <div class="featured__item">
+
+                        <div class="featured__item__pic set-bg" data-setbg="{{i.image.url}}" >
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="message"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="message"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">{{i.product_name}}</a></h6>
+                            <h5>₹{{i.price}}.00</h5>
+                        </div>
+
+                    </div>
+
+                </div>
+                {% endfor %}
+
+                    </div>
+                </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Featured Section End -->
+
+    <!-- Banner Begin -->
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="banner__pic">
+                        <img src="{% static 'assets/img/banner-1.jpg' %}" alt="">
+                    </div>
+                </div>
+<!--                <div class="col-lg-6 col-md-6 col-sm-6">-->
+<!--                    <div class="banner__pic">-->
+<!--                        <img src="{% static 'assets/img/banner/banner-2.jpg' %}" alt="">-->
+<!--                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner End -->
+
+    <!-- Latest Product Section Begin -->
+<!--  -->
+    <!-- Latest Product Section End -->
+
+    <!-- Blog Section Begin -->
+    <section class="from-blog spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title from-blog__title">
+                        <h2>From The Blog</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="{% static 'assets/img/blog/blog-1.jpg' %}" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                <li><i class="fa fa-comment-o"></i> 5</li>
+                            </ul>
+                            <h5><a href="#">The Benefits of Organic Foods</a></h5>
+                            <p>This blog post could focus on the various benefits of organic foods, such as being free from synthetic pesticides and fertilizers, having higher nutrient content, and supporting sustainable agricultural practices. You could also discuss the potential health and environmental benefits of choosing organic products over conventional ones.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="{% static 'assets/img/blog/blog-2.jpg' %}" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                <li><i class="fa fa-comment-o"></i> 5</li>
+                            </ul>
+                            <h5><a href="#">Spotlight on Local Organic Farmers</a></h5>
+                            <p>Highlight the importance of supporting local organic farmers and their contributions to sustainable agriculture. You could feature interviews with local farmers, discuss their farming practices, and showcase the variety of organic produce available in your store that comes from these farmers. This type of content can help build a connection between your store and the local community while promoting the benefits of locally sourced organic products.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="{% static 'assets/img/blog/blog-3.jpg' %}" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                <li><i class="fa fa-comment-o"></i> 5</li>
+                            </ul>
+                            <h5><a href="#">Tips for Transitioning to an Organic Lifestyle</a></h5>
+                            <p>Offer practical tips and advice for individuals or families looking to transition to a more organic lifestyle. This could include guidance on reading food labels, understanding organic certifications, budgeting for organic groceries, and making simple changes to incorporate more organic products into everyday life. By providing helpful information, you can position your store as a trusted resource for those interested in organic living.
+
+These blog post ideas can help educate your audience about the benefits of organic products, showcase your store's commitment to sustainability, and attract customers who are interested in making healthier and more environmentally friendly choices.
+
+
+
+
+
+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="./index.html"><img src="{% static 'assets/img/logo.png' %}" alt=""></a>
+                        </div>
+                        <ul>
+                            <li>Address: 60-49 Road 11378 Ernamkulam</li>
+                            <li>Phone: 9207035582</li>
+                            <li>Email: ogni@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Useful Links</h6>
+                        <ul>
+                            <li><a href=" ">Home</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+
+        </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="{% static 'assets/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery-ui.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'assets/js/mixitup.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+
+
+</body>
+
+</html>
